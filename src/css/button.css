@@ -1,0 +1,114 @@
+/*  */
+button {
+    /* --background: #275efe; */
+    /* --text: #24683D; */
+    --text: #fff;
+    color: #fff;
+    --font-size: 14px;
+    --duration: 0.44s;
+    --move-hover: -4px;
+    --font-shadow: var(--font-size);
+    --shadow-hover: #000;
+    padding: 16px 32px;
+    font-family: 'Rubik';
+    font-weight: 100;
+    letter-spacing: 1px;
+    border: none;
+    letter-spacing: 0.5px;
+    transform: translateY(var(--y)) translateZ(0);
+    transition: transform var(--duration) ease, box-shadow var(--duration) ease;
+}
+
+button div {
+    display: flex;
+    overflow: hidden;
+    text-shadow: 0 var(--font-shadow) 0 var(--text);
+}
+button div span {
+    letter-spacing: 1px;
+    display: block;
+    backface-visibility: hidden;
+    font-style: normal;
+    transition: transform var(--duration) ease;
+    transform: translateY(var(--m)) translateZ(0);
+}
+button div span:nth-child(1) {
+    transition-delay: 0.05s;
+}
+button div span:nth-child(2) {
+    transition-delay: 0.1s;
+}
+button div span:nth-child(3) {
+    transition-delay: 0.15s;
+}
+button div span:nth-child(4) {
+    transition-delay: 0.2s;
+}
+button div span:nth-child(5) {
+    transition-delay: 0.25s;
+}
+button div span:nth-child(6) {
+    transition-delay: 0.3s;
+}
+button div span:nth-child(7) {
+    transition-delay: 0.35s;
+}
+button div span:nth-child(8) {
+    transition-delay: 0.4s;
+}
+button div span:nth-child(9) {
+    transition-delay: 0.45s;
+}
+button div span:nth-child(10) {
+    transition-delay: 0.5s;
+}
+button div span:nth-child(11) {
+    transition-delay: 0.55s;
+}
+button:hover {
+    --y: var(--move-hover);
+    --shadow: var(--shadow-hover);
+}
+
+button div {
+    height: 15px;
+}
+
+button div span {
+    transition: .7s;
+    text-shadow: #00000000;
+}
+
+button:hover span {
+    color: #00000000;
+    --m: calc(var(--font-size) * -1);
+}
+button.reverse {
+    --font-shadow: calc(var(--font-size) * -1);
+}
+button.reverse:hover span {
+    --m: calc(var(--font-size));
+}
+
+body .button-list {
+    display: flex;
+}
+body .button-list button {
+    margin: 0 12px;
+}
+body .dribbble {
+    position: fixed;
+    display: block;
+    right: 20px;
+    bottom: 20px;
+}
+body .dribbble img {
+    display: block;
+    height: 28px;
+}
+
+.contact-btn:active {
+    transform: scaleX(0.95);
+    transform-origin: center;
+    background: #1C2818;
+}
