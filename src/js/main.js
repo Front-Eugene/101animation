@@ -55,11 +55,11 @@
         resizableElement.style.height = "1%";
       } 
 
-      if (scrollPercentage >= 15) {
+      if (scrollPercentage >= 12) {
         resizableElement.style.height = "33%";
       } 
 
-      if (scrollPercentage >= 25) {
+      if (scrollPercentage >= 20) {
         resizableElement.style.height = "66%";
       } 
 
@@ -78,7 +78,7 @@
           let item2 = document.querySelector('.perks-item-2');
           let item3 = document.querySelector('.perks-item-3');
     
-          if (scrollPercentage >= 25) {
+          if (scrollPercentage >= 20) {
             item2.classList.add('perks-item-active')
           } else {
             item2.classList.remove('perks-item-active')
