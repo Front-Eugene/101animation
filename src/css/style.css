@@ -748,6 +748,8 @@ nav {
         width: 1280px;
         position: relative;
         top: 59px;
+        z-index: 100;
+        background: #fff;
     }
 
     .services-wrap {
